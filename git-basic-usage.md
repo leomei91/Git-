@@ -32,7 +32,7 @@ $ git config --global user.name "tom"
 #### 6.在github创建一个新仓库
 New Repository -> 最好填写纯英文名称（中文可能被忽略）
 
-#### 7.创建本地仓库
+#### 7.创建本地仓库并上传（https方式）
 ```
 $ mkdir git-projects
 
@@ -46,8 +46,21 @@ $ git add README.md
 
 $ git commit -m "first commit"
 
-$ git remote add origin https://github.com/leomei91/Git-Basic-Usage.git
+$ git remote add origin https://github.com/leomei91/Git-Basic-Usage.git # 使用 https 方式
 
 $ git push -u origin master # 这一步需要填写github账号和密码
+
+```
+
+#### 8.更换为ssh方式
+采用ssh方式就不用每次推送都输出用户名密码了！
+```
+$ git remote -v
+
+$ git remote rm origin
+
+$ git remote add origin git@github.com:leomei91/Git-Basic-Usage.git
+
+$ git push -u origin master
 
 ```
