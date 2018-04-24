@@ -1,6 +1,7 @@
 [TOC]
 
 > Git是一个版本控制系统（Version Control System，VCS）。
+### 上传本地项目到GitHub
 
 #### 1.生成秘钥
 ```
